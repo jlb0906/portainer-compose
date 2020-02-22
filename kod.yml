@@ -1,10 +1,11 @@
-version: "2"
+version: "3"
 
 services:
   kodexplorer:
-    image: yangxuan8282/kodexplorer
+    image: ugeek/kodexplorer:arm
     restart: "always"
+    container_name: kodexplorer
     ports:
-      - "8081:80"
+      - 8081:80
     volumes:
-      - "/srv/dev-disk-by-label-sandisk/kod:/var/www/html"
+      - /srv/dev-disk-by-label-sandisk/kod:/var/www/html
