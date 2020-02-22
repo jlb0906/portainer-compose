@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  kodexplorer:
+    image: yangxuan8282/kodexplorer
+    restart: "always"
+    ports:
+      - "8081:80"
+    volumes:
+      - "/srv/dev-disk-by-label-sandisk/kod:/var/www/html"
