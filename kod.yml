@@ -1,8 +1,8 @@
-version: "2"
+version: "3"
 
 services:
   kodexplorer:
-    image: ugeek/kodexplorer:arm
+    image: lstcml/n1_kodcloud
     restart: "always"
     container_name: kodexplorer
     ports:
